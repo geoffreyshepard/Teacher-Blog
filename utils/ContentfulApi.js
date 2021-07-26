@@ -42,7 +42,7 @@ export default class ContentfulApi {
   static async getPageContentBySlug(slug, options = defaultOptions) {
     const query = `
     {
-      pageContentCollection(limit: 1, where: {slug: "${slug}"}, preview: ${options.preview}) {
+      pageContentCollection(limit: 1, where: {slug: "/"}) {
         items {
           sys {
             id
